@@ -66,8 +66,6 @@ public class MainActivity extends AppCompatActivity {
                 addAndEditContacts(false, null, -1);
             }
         });
-
-
     }
 
     public void addAndEditContacts(final boolean isUpdated, final Contact contact, final int position) {
@@ -105,7 +103,9 @@ public class MainActivity extends AppCompatActivity {
                                     dialogInterface.cancel();
                                 }
                             }
-                        });
+                        }
+                );
+
         final AlertDialog alertDialog = alertDialogBuilder.create();
         alertDialog.show();
 
@@ -125,9 +125,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
-
-
 
     }
 
